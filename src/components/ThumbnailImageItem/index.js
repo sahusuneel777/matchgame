@@ -1,13 +1,25 @@
 import './index.css'
 
 const ThumbnailImageItem = props => {
-  const {imageDetails} = props
-  const {id, thumbnailUrl, category} = imageDetails
+  const {imageDetails, onSelectIncrement} = props
+  const {id, thumbnailUrl} = imageDetails
+
+  const onclickImage = () => {
+    onSelectIncrement(id)
+    console.log('ThumbnailImageClicked')
+  }
 
   return (
-    <div className="thumbNail-image-container">
-      <img src={thumbnailUrl} className="thumbNail-image" alt="thumbnail" />
-    </div>
+    <li className="thumbNail-image-container">
+      <button type="button" className="thumbnail-button">
+        <img
+          src={thumbnailUrl}
+          className="thumbNail-image"
+          onClick={onclickImage}
+          alt="thumbnail"
+        />
+      </button>
+    </li>
   )
 }
 

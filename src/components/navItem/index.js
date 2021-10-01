@@ -2,28 +2,38 @@ import {Component} from 'react'
 import './index.css'
 
 class Nav extends Component {
-  state = {
-    score: 0,
-    counterTime: 60,
+  /* state = {
+    counterTime: 10,
   }
 
   componentDidMount() {
     this.timerID = setInterval(this.decrementTimer, 1000)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timerID)
+  } 
+
   decrementTimer = () => {
     const {counterTime} = this.state
+    const {isGameIsOn} = this.props
     this.setState(prevState => ({
       counterTime: prevState.counterTime - 1,
     }))
 
     if (counterTime === 1) {
       clearInterval(this.timerID)
+      {isGameIsOn:false}
+
     }
-  }
+  } */
 
   render() {
-    const {score, counterTime} = this.state
+    // const {counterTime} = this.state
+    const {score, isGameIsOn, counterTime} = this.props
+    if (!isGameIsOn) {
+      clearInterval(this.timerID)
+    }
 
     return (
       <div className="nav-container">

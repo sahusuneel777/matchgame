@@ -28,3 +28,46 @@
   flex-wrap: wrap;
   width: 50%;
 }
+.results-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  padding: 16px;
+}
+.trophy {
+  height: 140px;
+  width: 170px;
+}
+.result-heading {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.score-value {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.playAgain-button {
+  background-color: #cf60c8;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.reset {
+  display: flex;
+  background-color: #cf60c8;
+  padding: 5px;
+  border-radius: 5px;
+}
+.reset-img {
+  height: 20px;
+  width: 20px;
+}

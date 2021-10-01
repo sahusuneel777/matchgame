@@ -1,10 +1,17 @@
 .thumbNail-image-container {
-  height: 100px;
-  width: 100px;
   margin: 5px;
+  list-style-type: none;
 }
 .thumbNail-image {
   height: 100%;
   width: 100%;
   background-size: cover;
+}
+.thumbnail-button {
+  border: none;
+  outline: none;
+  padding: 0px;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
 }
