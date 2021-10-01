@@ -1,0 +1,10 @@
+.thumbNail-image-container {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+.thumbNail-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}

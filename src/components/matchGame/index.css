@@ -1,0 +1,30 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  height: 120vh;
+}
+.thumbNail-Big-image-container {
+  width: 80%;
+  padding: 10px;
+  height: 400px;
+  text-align: center;
+  margin-top: 0px;
+}
+.big-display-image {
+  height: 90%;
+  width: 60%;
+  object-fit: fill;
+}
+.tab-list-container {
+  display: flex;
+  margin-top: 0px;
+}
+.thumbnail-images-list-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+}

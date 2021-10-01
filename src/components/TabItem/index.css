@@ -1,0 +1,17 @@
+.tab-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.tab-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.active-tab-btn {
+  text-decoration: underline;
+  color: #fec653;
+}
